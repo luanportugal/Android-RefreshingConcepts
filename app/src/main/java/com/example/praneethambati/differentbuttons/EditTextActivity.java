@@ -1,7 +1,9 @@
 package com.example.praneethambati.differentbuttons;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,6 +39,7 @@ public class EditTextActivity extends AppCompatActivity {
 
         btn = (Button) findViewById(R.id.button);
 
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,9 +56,13 @@ public class EditTextActivity extends AppCompatActivity {
                 numberSigned1 = numberSigned.getText().toString();
                 numberDecimal1 = numberDecimal.getText().toString();
 
-                Toast.makeText(getApplicationContext(),name1+"\n"+password1+"\n"+pin1+"\n"+email1+"\n"+phone1+"\n"+address1+"\n"+description1+"\n"+time1+"\n"+date1+"\n"+number1+"\n"+numberSigned1+"\n"+numberDecimal1,Toast.LENGTH_LONG).show();
+                Toast t = Toast.makeText(getApplicationContext(),name1+"\n"+password1+"\n"+pin1+"\n"+email1+"\n"+phone1+"\n"+address1+"\n"+description1+"\n"+time1+"\n"+date1+"\n"+number1+"\n"+numberSigned1+"\n"+numberDecimal1,Toast.LENGTH_LONG);
+                t.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+                t.show();
             }
         });
+
+
 
     }
 }

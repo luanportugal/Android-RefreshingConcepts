@@ -80,12 +80,17 @@
         android:progress="3"
         android:id="@+id/seekBar2" />
 
-    <EditText
+    <Button
+        android:text="EditTexts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText" />
+        android:id="@+id/EditTextBTN" />
+
+    <Button
+        android:text="Custom TOAST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toast" />
 
 
 </LinearLayout>

@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.logging.Handler;
 
 public class MainActivity extends AppCompatActivity {
-    Button toggle, radio,switchs;
+    Button toggle, radio,switchs,editTextBTN,toast;
     RatingBar rb;
     TextView tv,tv5;
     Spinner sp1,sp2;
@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         toggle = (Button) findViewById(R.id.toggle);
         radio = (Button) findViewById(R.id.radio);
         switchs = (Button) findViewById(R.id.switchs);
+        editTextBTN = (Button) findViewById(R.id.EditTextBTN);
+        toast = (Button) findViewById(R.id.toast);
+
         rb = (RatingBar) findViewById(R.id.ratingBar);
         tv = (TextView) findViewById(R.id.textView4);
         tv5 = (TextView) findViewById(R.id.textView5);
@@ -159,6 +162,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
+            }
+        });
+
+
+        editTextBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,EditTextActivity.class);
+                startActivity(i);
+            }
+        });
+
+        toast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ToastActivity.class);
+                startActivity(i);
             }
         });
 
