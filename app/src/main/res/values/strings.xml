@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DifferentButtons</string>
+    <string name="ChooseFromMenu">Choose from Menu</string>
+    <string-array name="menu">
+        <item>India</item>
+        <item>USA</item>
+        <item>Sri Lanka</item>
+    </string-array>
+</resources>
