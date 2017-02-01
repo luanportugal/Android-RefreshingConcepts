@@ -56,4 +56,27 @@
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:id="@+id/valueText1" />
+
+    <Button
+        android:text="Hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="71dp"
+        android:id="@+id/hideBTN" />
+
+    <Button
+        android:text="Unhide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hideBTN"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:id="@+id/unhideBTN" />
 </RelativeLayout>

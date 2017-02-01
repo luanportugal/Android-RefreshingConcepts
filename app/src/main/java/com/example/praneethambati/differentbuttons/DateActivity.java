@@ -34,10 +34,9 @@ public class DateActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 Calendar newDate = Calendar.getInstance();
-                newDate.set(year,month,dayOfMonth);
+                newDate.set(year, month, dayOfMonth);
                 dateET.setText(dateFormatter.format(newDate.getTime()));
             }
-
         }, newCalendar.get(Calendar.YEAR),newCalendar.get(Calendar.MONTH),newCalendar.get(Calendar.DAY_OF_MONTH));
     }
 

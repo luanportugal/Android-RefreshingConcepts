@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.logging.Handler;
 
 public class MainActivity extends AppCompatActivity {
-    Button toggle, radio,switchs,editTextBTN,toast;
+    Button toggle, radio,switchs,editTextBTN,toast,containersBTN,activityLifeBTN,fragBTN,fragBTN2,dateBTN;
     RatingBar rb;
     TextView tv,tv5;
     Spinner sp1,sp2;
@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
         switchs = (Button) findViewById(R.id.switchs);
         editTextBTN = (Button) findViewById(R.id.EditTextBTN);
         toast = (Button) findViewById(R.id.toast);
+        containersBTN = (Button) findViewById(R.id.containersBTN);
+        activityLifeBTN = (Button) findViewById(R.id.activityLifeBTN);
+        fragBTN = (Button) findViewById(R.id.fragBTN);
+        fragBTN2 = (Button) findViewById(R.id.fragBTN2);
+
+        dateBTN = (Button) findViewById(R.id.dateBTN);
 
         rb = (RatingBar) findViewById(R.id.ratingBar);
         tv = (TextView) findViewById(R.id.textView4);
@@ -182,5 +188,44 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        containersBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ContainersActivity.class);
+                startActivity(i);
+            }
+        });
+
+        activityLifeBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, LifecycleActivity.class);
+                startActivity(i);
+            }
+        });
+
+        fragBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, FragmentActivity.class);
+                startActivity(i);
+            }
+        });
+
+        fragBTN2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, FragmentTaskActivity.class);
+                startActivity(i);
+            }
+        });
+
+        dateBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, DateActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }

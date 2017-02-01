@@ -20,7 +20,7 @@ public class ListViewContainer extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
         listView2 = (ListView) findViewById(R.id.listView2);
 
-        ArrayAdapter<String> adp = new ArrayAdapter<String>(this,R.layout.activity_listview_datainfo,R.id.listCell,Course);
+        ArrayAdapter<String> adp = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,Course);
 
         listView.setAdapter(adp);
 
